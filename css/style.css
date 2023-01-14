@@ -100,6 +100,7 @@ b, strong {
 
 .animated {
   position: relative;
+  width:100%;
 }
 
 .animated-info {
@@ -513,6 +514,10 @@ span{
   color: #2C6575;
 }
 
+.maincolor{
+  color: #00A7DC;
+}
+
 .h2-box{
   margin:5em 0 ;
 }
@@ -521,6 +526,10 @@ span{
   display:flex;
   flex-flow: row nowrap;
   gap: 3em;
+}
+
+.content-flex-center{
+  justify-content: space-around;
 }
 
 .content img{
@@ -563,7 +572,6 @@ p.saying{
 
 p.bigger{
   margin:10px 0;
-  
   color:black;
 }
 
@@ -577,7 +585,33 @@ div .center {
   margin-bottom:20px;
 }
 
+p.blue{
+  color:#1175cd;
+  font-weight: bold;
+}
 
+.content-flex-gif{
+}
+.content-flex-gif-re{
+  flex-direction: row-reverse;
+}
+
+.box2{
+  flex:1;
+}
+
+.box3{
+  flex:1;
+  background-color: #989898;
+  outline: white solid 10px;
+  outline-offset: -10px;
+}
+
+.gif{
+  outline: #989898 solid 2px;
+  outline-offset: -2px;
+  flex:0.5;
+}
 
 
 
@@ -657,6 +691,10 @@ div .center {
     flex-flow: row wrap;
   }
 
+  .content-flex-gif, .content-flex-gif-re{
+    flex-flow: row wrap;
+  }
+
 
 }
 
@@ -668,6 +706,11 @@ div .center {
   h2 {
     font-size: 2em;
   }
+
+  .animated-info{
+    margin-bottom: 2em;
+  }
+
 
   .animated-item {
     font-size: 1em;
