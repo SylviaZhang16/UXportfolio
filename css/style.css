@@ -314,6 +314,42 @@ h3.pName{
 }
 
 
+.others{
+  display:flex;
+  margin:50px -5.2%; 
+  flex-flow: row wrap;
+justify-content: space-between;
+  gap:2.5em;
+
+}
+
+.others-box{
+  flex:1;
+  min-width:400px;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.pbox img:hover{
+  outline: #00A7DC solid 3.5px;
+  outline-offset:-4px ;
+}
+
+
+
+.oname{
+  margin:15px 0;
+  font-size: 25px;
+}
+
+.odes{
+}
+
+
+
+
+
 
 
 
@@ -514,6 +550,11 @@ span{
   color: #2C6575;
 }
 
+.purple{
+  color:#2723BF;
+  font-weight: bold;
+}
+
 .maincolor{
   color: #00A7DC;
 }
@@ -526,6 +567,11 @@ span{
   display:flex;
   flex-flow: row nowrap;
   gap: 3em;
+}
+
+.content-flex2{
+  display:flex;
+  flex-flow: row nowrap;
 }
 
 .content-flex-center{
@@ -613,6 +659,17 @@ p.blue{
   flex:0.5;
 }
 
+.gif2{
+  outline: #424242 solid 3px;
+  outline-offset: -3px;
+}
+
+
+
+div .black{
+  background-color: #424242;
+
+}
 
 
 
@@ -687,14 +744,23 @@ p.blue{
     margin-top:6%;
   }
 
-  .content-flex{
+  .content-flex, .content-flex2{
     flex-flow: row wrap;
+    justify-content: center;
   }
 
   .content-flex-gif, .content-flex-gif-re{
     flex-flow: row wrap;
   }
 
+  div .black{
+    width:100%;
+  }
+
+  .others, .project{
+    margin-left:0;
+    margin-right:0;
+  }
 
 }
 
@@ -729,6 +795,9 @@ p.blue{
   .about-image{
     width:70%;
   }
+
+
+
 }
 @media (max-width: 580px) {
 	.animated-info {
