@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="css/prism.css" rel="stylesheet" />
+    <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     
   </head>
   <body>
@@ -55,7 +58,7 @@
             <div class="p-box">
                 <div class="p-tag">
                     <p class="p-de maincolor">Type</p>
-                    <p class="p-con">SI539 class assignment</p>
+                    <p class="p-con">SI539 class work</p>
                 </div>
                 <div class="p-tag">
                     <p class="p-de maincolor">My role</p>
@@ -63,7 +66,7 @@
                 </div>
                 <div class="p-tag">
                     <p class="p-de maincolor">Deliverables</p>
-                    <p class="p-con">User Map, User interface design, Prototype</p>
+                    <p class="p-con">Mobile-first design, Additional Javascript application</p>
                 </div>
                 <div class="p-tag">
                     <p class="p-de maincolor">Duration</p>
@@ -75,35 +78,48 @@
         <div class="container content">
             
             <div class="h2-box">
-                <h2>What I do?</h2>
-                <div cLass="center">
-                    <img src="images/project/museum/A4 - 8.png" width="800" alt="process">
+                <h2>Structure of pages</h2>
+                <div class="content-flex">
+                    <p>I choose the apartment I used to live in, Island Drive Apartment in Ann Arbor, to design the official website for.
+                        <br>The structure of the pages is simple: The index page gives an overview of the apartment and its advantages in order to attract future residents. And the navigation bar links to three other subpages: the room plan and prices page, the service page, and the application page.</p>
+                        <img src="images/project/others/web/Frame 9.png" width="600" alt="structure">
                 </div>
+                
             </div>
 
             <div class="h2-box">
-                <H2>Problem Analysis</H2>
+                <H2>Mobile-first & Responsible Design</H2>
                 <p>As a large country-owned museum, Shanghai Museum has explored the digitization of its collections and virtual exhibition to a certain extent. And its services are extensive and comprehensive, which shows its academic support and years of business accumulation.</p>
                 <div cLass="center">
-                    <img src="images/project/museum/screen.png"  alt="weBsite">
-                    <figcaption>The homepage of official website</figcaption>
-                    <img src="images/project/museum/A4 - 10.png" width="100%" alt="Problem">
-                </div>
-                <p>However, there are several problem with the existing official websites and applications.
-<br><span>(1) The key features and exhibition resources are not well connected through different screens and devices.</span> Users have to use all of them to receive the wanted service at the same time.
-<br><span>(2)The current interface of exhibits information, 3D models and correspondingly virtual exhibition is immature and hard to use.</span> Also, they are not accessible on one certain mobile application.</p>
+                    <img src="images/project/others/web/Frame 1.png" width="900" alt="mobile first">
+                    <pre><code class="language-html">&lt;div class=&quot;entry&quot;&gt;
+                        {{!-- only show if author exists --}}
+                        {{#if author}}
+                          &lt;h1&gt;{{firstName}} {{lastName}}&lt;/h1&gt;
+                        {{/if}}
+                      &lt;/div&gt;
+                      </code></pre>
+                </div>           
             </div>
-
+            <div class="h2-box">
+                <h2>Gallery</h2>
+            </div>
 
             <div class="h2-box">
-                <h2>Conclusion & Reflection</h2>
-                <p>1. Solid user research is crucial. Quantitative analysis can reveal users' tendencies through statistics, while specific interviews can reveal users' pain points in more detail, thus building a vivid user portrait. In this regard, we hope to do more improvement and iteration in the future.
-                  <br>2. How far can the museum's virtual tour be developed in the future? Can it be combined with Bluetooth, NFC, and AR/VR technologies to achieve better results?  With the growth of user experience design, it may be possible to get a more realistic and inclusive interactive experience through iteration.
-                    <br>3. What will be the further connection between the physical exhibition space and the virtual digital world? Will the physical exhibition space also change its composition as the user's viewing perspective and demand shifts? I think this is a question that museums and art practitioners will continue to explore together in the future.</p>
+                <h2>More Accessibility</h2>
+                <img src="images/project/others/web/1.png"  alt="skip">
+                    
             </div>
 
+            <div class="h2-box">
+                <h2>Javascript Application——A Rent Calculator</h2>
+            </div>
 
+            <div class="h2-box">
+                <h2>Contact-me Form</h2>
+            </div>
 
+           
 
 
 
@@ -138,6 +154,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
-
+    <script src="js/prism.js"></script>
+    <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+	<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
 </html>
