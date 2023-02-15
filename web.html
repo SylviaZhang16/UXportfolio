@@ -80,7 +80,7 @@
             <div class="h2-box">
                 <h2>Structure of pages</h2>
                 <div class="content-flex">
-                    <p>I choose the apartment I used to live in, Island Drive Apartment in Ann Arbor, to design the official website for.
+                    <p>I chose the apartment I used to live in, Island Drive Apartment in Ann Arbor, to design the official website for.
                         <br>The structure of the pages is simple: The index page gives an overview of the apartment and its advantages in order to attract future residents. And the navigation bar links to three other subpages: the room plan and prices page, the service page, and the application page.</p>
                         <img src="images/project/others/web/Frame 9.png" width="600" alt="structure">
                 </div>
@@ -92,31 +92,127 @@
                 <p>As a large country-owned museum, Shanghai Museum has explored the digitization of its collections and virtual exhibition to a certain extent. And its services are extensive and comprehensive, which shows its academic support and years of business accumulation.</p>
                 <div cLass="center">
                     <img src="images/project/others/web/Frame 1.png" width="900" alt="mobile first">
-                    <pre><code class="language-html">&lt;div class=&quot;entry&quot;&gt;
-                        {{!-- only show if author exists --}}
-                        {{#if author}}
-                          &lt;h1&gt;{{firstName}} {{lastName}}&lt;/h1&gt;
-                        {{/if}}
-                      &lt;/div&gt;
-                      </code></pre>
+                    <pre><code class="language-css">
+                    body {
+                        background-color: white;
+                        font-family: 'Raleway', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-areas:
+                          "header"
+                          "main"
+                          "aside"
+                          "footer";
+                    }
+                    ......
+                
+                    /* for tablet */
+                    @media all and (min-width: 768px){
+                        ......
+                    }
+
+                    /* for desktop */
+                    @media all and (min-width: 992px){
+                        body {
+                            grid-template-columns: 4fr 1fr;
+                            grid-template-areas:
+                              "header header"
+                              "main aside"
+                              "footer footer";
+                        }
+                    ......
+                    }
+
+                </code></pre>
                 </div>           
             </div>
             <div class="h2-box">
                 <h2>Gallery</h2>
+                <div class="content-flex">
+                    <img src="images/project/others/web/w0.png"  width="420" alt="mobile">
+                    <img src="images/project/others/web/w1.png"  width="600" alt="tablet">
+                </div>
+                <img src="images/project/others/web/w2.png"  width="1020"  alt="desktop">
             </div>
 
             <div class="h2-box">
                 <h2>More Accessibility</h2>
                 <img src="images/project/others/web/1.png"  alt="skip">
+                <pre><code class="language-css">
+                    .skip{
+                        z-index: 100;
+                    }
                     
+                    .skip a{
+                        background: white;
+                        padding: 6px;
+                        -webkit-transition: top 1s ease-out;
+                        transition: top 1s ease-out;
+                        position: relative;
+                        left:-500px;
+                        top:-40px;
+                      
+                      }
+                      
+                      .skip a:focus{
+                        background: white;
+                        top: 0;
+                        left: 0;
+                        padding: 6px;
+                        -webkit-transition: top 1s ease-out;
+                        transition: top 1s ease-out;
+                        z-index: 1;
+                        position: absolute;
+                      }
+                      
+                      .skip a:focus, .skip a:active{
+                        top: 20px;
+                        left: 0;
+                      }
+                    
+                      :focus{
+                        border: 2px solid black;
+                      }
+                </code></pre>
             </div>
 
             <div class="h2-box">
-                <h2>Javascript Application——A Rent Calculator</h2>
+                <h2>Javascript Application——A Rent Calculator</h2> 
+                    <img src="images/project/others/web/2.png"  alt="rent calculator">
+                    <pre><code class="language-javascript">
+                        var slider = document.getElementById("wifi");
+
+                        document.getElementById("start").setAttribute("onclick", "calculateRent()");
+                        
+                        function calculateRent(){
+                            var room = document.getElementById("room").value *1;
+                            var cat = document.getElementById("cat").value * 20;
+                            var dog = document.getElementById("dog").value * 30;
+                            var wifi = document.getElementById("wifi").value *1 +5;
+                            var car;
+                        
+                            if(document.getElementById("yes").checked="true"){
+                                car=50;
+                            }else{
+                                car=0;
+                            }
+                        
+                            var result= room + car*1 + cat + dog + wifi;
+                            document.getElementById("result").innerHTML="$" + result;
+                        
+                        }
+                    </code></pre>
+
             </div>
 
             <div class="h2-box">
                 <h2>Contact-me Form</h2>
+                <div class="content-flex">
+                    <p></p>
+                    <img src="images/project/others/web/3.png" width="400" alt="rent calculator">
+                </div>
             </div>
 
            
