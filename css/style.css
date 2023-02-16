@@ -352,71 +352,6 @@ h3.pName{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.timeline-wrapper {
-  position: relative;
-  padding: 22px 0;
-}
-.timeline-wrapper:last-child:before {
-  height: 0;
-}
-.timeline-wrapper:before {
-  content: "";
-  background: #474559;
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  left: 38px;
-}
-
-.timeline-yr {
-  background: #474559;
-  border-radius: 100%;
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  text-align: center;
-}
-.timeline-yr span {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  display: block;
-  line-height: 75px;
-}
-
-.timeline-info {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 432px;
-  margin-left: 6em;
-}
-.timeline-info small {
-  color: #474559;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-}
-
-
-
 .google-map iframe {
   width: 100%;
 }
@@ -836,6 +771,13 @@ div .black{
     display: block;
     margin: 10px 0 0 0;
   }
+
+
+  .gallery img{
+    max-width: 95%;
+    height:auto;
+  }
+
 }
 @media (max-width: 320px) {
   .animated-text {
@@ -861,6 +803,11 @@ div .black{
   .social-links li {
     display: inline-block;
     vertical-align: top;
+  }
+
+  .gallery img{
+    max-width: 95%;
+    height:auto;
   }
 
  
