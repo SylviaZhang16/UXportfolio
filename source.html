@@ -1,0 +1,27 @@
+<section class="room">
+  <span>What kind of room would you like to rent?</span>
+  <br>
+  <label for="room">Room type:</label>
+  <select name="room" id="room">
+      <option value=1100>Studio $1100</option>
+      <option value=1250>1B1B $1250</option>
+      <option value=750>one bedroom of 2B1B $1500</option>
+      <option value=600>one bedroom of 3B1B $1800</option>
+  </select>
+
+</section>
+<hr>
+<section class="car">
+<span>Do you need a parking lot for your car?($50 parking fee)</span>
+  <br>
+  <input type="radio" name="car" id="yes" value=50>
+  <label for="yes">Yes</label>
+  <input type="radio" name="car" id="no" value=0>
+  <label for="no">No</label>
+</section>
+......
+
+<button id="start">Start calculate my rent</button>
+<h3 >Your rent is <span id="result"></span></h3>
+<script src="js/cal.js"></script>
+

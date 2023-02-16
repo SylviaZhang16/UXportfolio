@@ -99,9 +99,13 @@
 
             <div class="h2-box">
                 <H2>Mobile-first & Responsible Design</H2>
-                <p>As a large country-owned museum, Shanghai Museum has explored the digitization of its collections and virtual exhibition to a certain extent. And its services are extensive and comprehensive, which shows its academic support and years of business accumulation.</p>
+                <p>Mobile-first design means that styles are applied first to mobile devices and I used min-width media queries.The overall page layout uses CSS gird. For the basic mobile view, I only use 1 column to stack contents.
+
+                    <br>The tablet breakpoint is 768px because it's the popular screen size of tablets (1024 x 768). The overall layout like the CSS grid of the whole page(header, main, aside, footer) is not changed. But I add more smaller grids in each section. For example, in one section, unlike text and images stacked top and bottom in mobile views, text and images can be arranged horizontally in a grid. Accordingly margin and padding are increased.  And in the gallery, justify-content is space around.
+                    <br>The desktop breakpoint is 992px because it's the popular screen size of large devices like desktops.The overall CSS grid is changed. I gave an additional column to the aside section because the screen becomes much wider.</p>
                 <div cLass="center">
                     <img src="images/project/others/web/Frame 1.png" width="900" alt="mobile first">
+                    <p>CSS:</p>
                     <pre><code class="language-css">
                     body {
                         background-color: white;
@@ -140,6 +144,10 @@
             </div>
             <div class="h2-box">
                 <h2>Gallery</h2>
+                <p>I also create a reponsible gallery page with CSS flexbox. 
+                    <br>For mobile view, I use flex-direction as column and then change it into row-wrap in tablet and desktop view.I also use the justify-item to adjust the position of pictures.
+                    <br>For styling, I add some new CSS effects to :hover, such as when the mouse hovers over images, to add more fun to the experience on a desktop.
+                </p>
                 <div class="content-flex">
                     <img src="images/project/others/web/w0.png"  width="420" alt="mobile">
                     <img src="images/project/others/web/w1.png"  width="600" alt="tablet">
@@ -149,7 +157,10 @@
 
             <div class="h2-box">
                 <h2>More Accessibility</h2>
+                <p>n order to enhance accessibility, it’s important to offer styling for objects which ****receive keyboard focus**** and a skip-to-content link for people using keyboard, screen readers, switch controls and other assistive technologies.
+                    <br>The skip link is the first interactive element on a page but it’s usually hidden until the user press TAB, for example, on the keyboard. Then the link will appear in the upper left corner and allow users to reach the main content or other important sections easier and faster.</p>
                 <img src="images/project/others/web/1.png"  alt="skip">
+                <p>CSS:</p>
                 <pre><code class="language-css">
                     .skip{
                         z-index: 100;
@@ -189,8 +200,15 @@
             </div>
 
             <div class="h2-box">
-                <h2>Javascript Application——A Rent Calculator</h2> 
+                <h2>Javascript Application——A Rent Calculator</h2>
+                <p>
+                    When I look at apartment information, I am often confused about the total cost I am paying because there are so many other requirements and fees besides the rent. 
+                    <br>So I planted a calculator written in javascript on the floorplan page, hoping to help potential tenants calculate the cost to highlight the price advantage of the apartment. Users can use the form to select different options for room type, parking, and pets to calculate their possible monthly expenses in this apartment.
+                <br><br>Here's the screenshot:
+                </p>
                     <img src="images/project/others/web/2.png"  alt="rent calculator">
+                    <pre data-src="source.html"></pre>
+                    <p>JavaScript:</p>
                     <pre><code class="language-javascript">
                         var slider = document.getElementById("wifi");
 
@@ -198,11 +216,8 @@
                         
                         function calculateRent(){
                             var room = document.getElementById("room").value *1;
-                            var cat = document.getElementById("cat").value * 20;
-                            var dog = document.getElementById("dog").value * 30;
-                            var wifi = document.getElementById("wifi").value *1 +5;
+                            .......
                             var car;
-                        
                             if(document.getElementById("yes").checked="true"){
                                 car=50;
                             }else{
@@ -219,17 +234,23 @@
 
             <div class="h2-box">
                 <h2>Contact-me Form</h2>
+             
                 <div class="content-flex">
+                    <p>
+                        A contact form is an integral part of the apartment website as well. I used a HTML form to collect the data with the assistance of formspree.
+                    </p>
                     <p></p>
                     <img src="images/project/others/web/3.png" width="400" alt="rent calculator">
                 </div>
             </div>
 
+            <div class="h2-box">
+                <p><span>Github link:</span>
+                <a href="https://github.com/SylviaZhang16/web-design" alt="link" target=”_blank”>
+                    https://github.com/SylviaZhang16/web-design
+                </a></p>
+            </div>
            
-
-
-
-
 
         <div class="change">
                <a href="planning.html" class=" btn custom-btn custom-btn-change next">Next project ＞</a>
